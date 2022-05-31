@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Log a Swan</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <table cellspacing="10">
+          <tr>
+            <td><label for="selectDrinker">Select drinker:</label></td>
+            <td>
+              <select name="selectDrinker" required>
+                <option value="" selected disabled hidden>Select...</option>
+                <option value="">Jamie</option>
+                <option value="">Jake</option>
+                <option value="">Jack</option>
+                <option value="">Brant</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="selectBuyer">Select buyer:</label></td>
+            <td>
+              <select name="selectBuyer" required>
+                <option value="" selected disabled hidden>Select...</option>
+                <option value="">Jamie</option>
+                <option value="">Jake</option>
+                <option value="">Jack</option>
+                <option value="">Brant</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="selectHouse">Select public house:</label></td>
+            <td>
+              <select name="selectHouse" required>
+                <option value="" selected disabled hidden>Select...</option>
+                <option value="">Pica Bar</option>
+                <option value="">James Squires</option>
+                <option value="">The Royal Hotel</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td><img src="images/logo.png" alt="Swan logo" width="200" height="200"></td>
+    </tr>
+  </table>
+  <hr>
+  <table>
+    <thead>
+      <tr>
+        <th>Pre-Swan thirst:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><label for="selectThirst">Select thirst level:</label></td>
+        <td>
+          <div class="selection-slider">
+            <input type="range" name="selectThirst" value="3" min="1" max="5" step="1">
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
