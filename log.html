@@ -7,68 +7,190 @@
 </head>
 
 <body>
-  <table>
-    <tr>
-      <td>
-        <table cellspacing="10">
-          <tr>
-            <td><label for="selectDrinker">Select drinker:</label></td>
-            <td>
-              <select name="selectDrinker" required>
-                <option value="" selected disabled hidden>Select...</option>
-                <option value="">Jamie</option>
-                <option value="">Jake</option>
-                <option value="">Jack</option>
-                <option value="">Brant</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td><label for="selectBuyer">Select buyer:</label></td>
-            <td>
-              <select name="selectBuyer" required>
-                <option value="" selected disabled hidden>Select...</option>
-                <option value="">Jamie</option>
-                <option value="">Jake</option>
-                <option value="">Jack</option>
-                <option value="">Brant</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td><label for="selectHouse">Select public house:</label></td>
-            <td>
-              <select name="selectHouse" required>
-                <option value="" selected disabled hidden>Select...</option>
-                <option value="">Pica Bar</option>
-                <option value="">James Squires</option>
-                <option value="">The Royal Hotel</option>
-              </select>
-            </td>
-          </tr>
-        </table>
-      </td>
-      <td><img src="images/logo.png" alt="Swan logo" width="200" height="200"></td>
-    </tr>
-  </table>
-  <hr>
-  <table>
-    <thead>
+
+  <form action="mailto:jmrlly@icloud.com" method="post" enctype="text/plain">
+
+    <!-- nested table to hold three selection menus -->
+    <table>
       <tr>
-        <th>Pre-Swan thirst:</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><label for="selectThirst">Select thirst level:</label></td>
         <td>
-          <div class="selection-slider">
-            <input type="range" name="selectThirst" value="3" min="1" max="5" step="1">
-          </div>
+          <table cellspacing="10">
+            <tr>
+              <td><label for="selectDrinker">Select drinker:</label></td>
+              <td>
+                <select name="selectDrinker" required>
+                  <option value="" selected disabled hidden>Select...</option>
+                  <option value="">Jamie</option>
+                  <option value="">Jake</option>
+                  <option value="">Jack</option>
+                  <option value="">Brant</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="selectBuyer">Select buyer:</label></td>
+              <td>
+                <select name="selectBuyer" required>
+                  <option value="" selected disabled hidden>Select...</option>
+                  <option value="">Jamie</option>
+                  <option value="">Jake</option>
+                  <option value="">Jack</option>
+                  <option value="">Brant</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="selectHouse">Select public house:</label></td>
+              <td>
+                <select name="selectHouse" required>
+                  <option value="" selected disabled hidden>Select...</option>
+                  <option value="">Pica Bar</option>
+                  <option value="">James Squires</option>
+                  <option value="">The Royal Hotel</option>
+                </select>
+              </td>
+            </tr>
+          </table>
         </td>
+        <td><img src="images/logo.png" alt="Swan logo" width="200" height="200"></td>
       </tr>
-    </tbody>
-  </table>
+    </table>
+
+    <hr>
+
+    <!-- pre-swan thirst table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Pre-Swan thirst:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="selectThirst">Select thirst level:</label></td>
+          <td><input type="range" name="selectThirst" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <!-- fundamentals table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Fundamentals</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="rankTemp"></label>Temperature</td>
+          <td><input type="range" name="rankTemp" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+        <tr>
+          <td><label for="rankCarbo"></label>Carbonation</td>
+          <td><input type="range" name="rankCarbo" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <!-- enjoyment table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Enjoyment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="rankHead"></label>Head</td>
+          <td><input type="range" name="rankHead" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+        <tr>
+          <td><label for="rankTaste"></label>Taste</td>
+          <td><input type="range" name="rankTaste" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <!-- appearance table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Appearance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="rankColour"></label>Colour</td>
+          <td><input type="range" name="rankColour" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+        <tr>
+          <td><label for="rankClarity"></label>Clarity</td>
+          <td><input type="range" name="rankClarity" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <!-- locale table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Locale</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="rankPrice"></label>Price</td>
+          <td><input type="range" name="rankPrice" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+        <tr>
+          <td><label for="rankVessel"></label>Vessel</td>
+          <td><input type="range" name="rankVessel" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+        <tr>
+          <td><label for="rankAtmos"></label>Atmosphere</td>
+          <td><input type="range" name="rankAtmos" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <!-- post-swan mood table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Post-Swan mood:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="selectMood">Select mood level:</label></td>
+          <td><input type="range" name="selectMood" value="3" min="1" max="5" step="1"></td>
+          <!-- add text box showing value of slider -->
+        </tr>
+      </tbody>
+    </table>
+
+  </form>
+
 </body>
 
 </html>
