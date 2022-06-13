@@ -1,12 +1,24 @@
 /************************TAG SELECTORS************************/
 /* use the tag, no prefixes required */
+body{
+  font-family: Georgia, serif;
+  padding-top: 7rem;
+}
 
+h5 {
+  font-weight: bold;
+}
 
 
 /************************CLASS SELECTORS************************/
 /* use the class name, prefixed with . */
-
+.nav-img {
+  height: 5rem;
+}
 
 
 /************************ID SELECTORS************************/
 /* use the id name, prefixed with # */
+#log-top {
+
+}

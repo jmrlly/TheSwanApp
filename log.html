@@ -4,208 +4,319 @@
 <head>
   <meta charset="utf-8">
   <title>Log a Swan</title>
+  <link rel="icon" href="images/beer.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+  <section id="log-title">
+
+    <!-- Nav Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a href="index.html"><img src="images/logo.png" alt="swan-img" class="navbar-brand nav-img"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Log</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Title -->
+
+  </section>
+
   <form action="mailto:jmrlly@icloud.com" method="post" enctype="text/plain">
 
-    <!-- nested table to hold three selection menus -->
-    <table>
-      <tr>
-        <td>
-          <table cellspacing="10">
-            <tr>
-              <td><label for="selectDrinker">Select drinker:</label></td>
-              <td>
-                <select name="selectDrinker" required>
-                  <option value="" selected disabled hidden>Select...</option>
-                  <option value="">Jamie</option>
-                  <option value="">Jake</option>
-                  <option value="">Jack</option>
-                  <option value="">Brant</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td><label for="selectBuyer">Select buyer:</label></td>
-              <td>
-                <select name="selectBuyer" required>
-                  <option value="" selected disabled hidden>Select...</option>
-                  <option value="">Jamie</option>
-                  <option value="">Jake</option>
-                  <option value="">Jack</option>
-                  <option value="">Brant</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td><label for="selectHouse">Select public house:</label></td>
-              <td>
-                <select name="selectHouse" required>
-                  <option value="" selected disabled hidden>Select...</option>
-                  <option value="">Pica Bar</option>
-                  <option value="">James Squires</option>
-                  <option value="">The Royal Hotel</option>
-                </select>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td><img src="images/logo.png" alt="Swan logo" width="200" height="200"></td>
-      </tr>
-    </table>
+    <section id="log-top">
+
+      <div class="container-fluid">
+
+        <!-- grid layout -->
+
+        <div class="row ">
+
+          <div class="col-sm-3">
+            <label for="selectDrinker">Select drinker:</label>
+          </div>
+
+          <div class="col-sm-3">
+            <select name="selectDrinker" required>
+              <option value="" selected disabled hidden>Select...</option>
+              <option value="">Jamie</option>
+              <option value="">Jake</option>
+              <option value="">Jack</option>
+              <option value="">Brant</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="row ">
+
+          <div class="col-sm-3">
+            <label for="selectDrinker">Select drinker:</label>
+          </div>
+
+          <div class="col-sm-3">
+            <select name="selectBuyer" required>
+              <option value="" selected disabled hidden>Select...</option>
+              <option value="">Jamie</option>
+              <option value="">Jake</option>
+              <option value="">Jack</option>
+              <option value="">Brant</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="row ">
+
+          <div class="col-sm-3">
+            <label for="selectHouse">Select public house:</label>
+          </div>
+
+          <div class="col-sm-3">
+            <select name="selectHouse" required>
+              <option value="" selected disabled hidden>Select...</option>
+              <option value="">Pica Bar</option>
+              <option value="">James Squires</option>
+              <option value="">The Royal Hotel</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
 
     <hr>
 
-    <!-- pre-swan thirst table -->
-    <table>
-      <thead>
-        <tr>
-          <th>Pre-Swan thirst:</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><label for="selectThirst">Select thirst level:</label></td>
-          <td><input type="range" name="selectThirst" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-      </tbody>
-    </table>
+    <!-- beer scoring section -->
+    <section id="log-middle">
+      <!-- thirst level -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h5>Pre-Swan thirst:</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="selectThirst">Select thirst level:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="selectThirst" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- fundamentals -->
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col">
+            <h5>Fundamentals:</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="rankTemp">Temperature:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="rankTemp" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="rankFizz">Carbonation:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="rankFizz" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <!-- enjoyment -->
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col">
+            <h5>Enjoyment:</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="rankHead">Head:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="rankHead" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="rankTaste">Taste:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="rankTaste" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <!-- appearance -->
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col">
+            <h5>Appearance:</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="rankColour">Colour:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="rankColour" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="rankClarity">Clarity:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="rankClarity" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <!-- locale -->
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col">
+            <h5>Locale:</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="rankPrice">Price:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="rankPrice" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="rankVessel">Vessel:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="rankVessel" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="rankAtmos">Atmosphere:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="rankAtmos" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <!-- post-swan mood -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h5>Post-Swan mood:</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="selectMood">Select mood level:</label>
+          </div>
+          <div class="col">
+            <input type="range" name="selectMood" value="3" min="1" max="5" step="1">
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- comments -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h5>Comments:</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <textarea name="comments" rows="10" cols="42"></textarea>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
     <hr>
 
-    <!-- fundamentals table -->
-    <table>
-      <thead>
-        <tr>
-          <th>Fundamentals</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><label for="rankTemp"></label>Temperature:</td>
-          <td><input type="range" name="rankTemp" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-        <tr>
-          <td><label for="rankCarbo"></label>Carbonation:</td>
-          <td><input type="range" name="rankCarbo" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-      </tbody>
-    </table>
+    <section id="log-bottom">
+      <!-- form buttons -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <input type="button" name="goHome" value="Cancel">
+          </div>
 
-    <hr>
+          <div class="col-sm-4">
+            <input type="button" name="clearForm" value="Clear">
+          </div>
 
-    <!-- enjoyment table -->
-    <table>
-      <thead>
-        <tr>
-          <th>Enjoyment</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><label for="rankHead"></label>Head:</td>
-          <td><input type="range" name="rankHead" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-        <tr>
-          <td><label for="rankTaste"></label>Taste:</td>
-          <td><input type="range" name="rankTaste" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-      </tbody>
-    </table>
+          <div class="col-sm-4">
+            <input type="submit" name="logSwan" value="Log Swan">
+          </div>
 
-    <hr>
+        </div>
 
-    <!-- appearance table -->
-    <table>
-      <thead>
-        <tr>
-          <th>Appearance</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><label for="rankColour"></label>Colour:</td>
-          <td><input type="range" name="rankColour" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-        <tr>
-          <td><label for="rankClarity"></label>Clarity:</td>
-          <td><input type="range" name="rankClarity" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-      </tbody>
-    </table>
+      </div>
 
-    <hr>
-
-    <!-- locale table -->
-    <table>
-      <thead>
-        <tr>
-          <th>Locale</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><label for="rankPrice"></label>Price:</td>
-          <td><input type="range" name="rankPrice" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-        <tr>
-          <td><label for="rankVessel"></label>Vessel:</td>
-          <td><input type="range" name="rankVessel" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-        <tr>
-          <td><label for="rankAtmos"></label>Atmosphere:</td>
-          <td><input type="range" name="rankAtmos" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-      </tbody>
-    </table>
-
-    <hr>
-
-    <!-- post-swan mood table -->
-    <table>
-      <thead>
-        <tr>
-          <th>Post-Swan mood:</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><label for="selectMood">Select mood level:</label></td>
-          <td><input type="range" name="selectMood" value="3" min="1" max="5" step="1"></td>
-          <!-- add text box showing value of slider -->
-        </tr>
-      </tbody>
-    </table>
-
-    <hr>
-
-    <!-- comments table -->
-    <table>
-      <thead>
-        <th><label for="comments">Comments:</label></th>
-      </thead>
-    </table>
-    <textarea name="comments" rows="10" cols="42"></textarea>
-
-    <hr>
-
-    <!-- form buttons -->
-    <input type="button" name="goHome" value="Cancel">
-    <input type="button" name="clearForm" value="Clear">
-    <input type="submit" name="logSwan" value="Log Swan">
-
+    </section>
 
   </form>
 
