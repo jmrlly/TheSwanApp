@@ -11,7 +11,7 @@ h1 {
   text-align: left;
 }
 
-input [type=radio] {
+input[type=radio] {
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -28,6 +28,10 @@ textarea {
 
 /************************CLASS SELECTORS************************/
 /* use the class name, prefixed with . */
+
+.align-me-center {
+  text-align: center;
+}
 
 .bg-gold {
   background-color: #b58d2d;
