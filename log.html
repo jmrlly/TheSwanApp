@@ -53,47 +53,38 @@
     <section id="log-dropdowns">
 
       <div class="container-fluid pt-2">
-
         <div class="row">
 
+          <!-- drinker -->
           <div class="col-sm-4">
-            <div class="dropdown">
-              <button class="btn btn-lg btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Drinker
-              </button>
-              <!-- Use Javascript to show selected item -->
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Jamie</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
+            <select class="custom-select custom-select-lg bg-dark text-light mb-3">
+              <option selected disabled>-- Drinker --</option>
+              <option value="1">Brant</option>
+              <option value="2">Jack</option>
+              <option value="3">Jake</option>
+              <option value="4">Jamie</option>
+            </select>
           </div>
 
+          <!-- buyer -->
           <div class="col-sm-4">
-            <div class="dropdown">
-              <button class="btn btn-lg btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Buyer
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
+            <select class="custom-select custom-select-lg bg-dark text-light mb-3">
+              <option selected disabled>-- Buyer --</option>
+              <option value="1">Brant</option>
+              <option value="2">Jack</option>
+              <option value="3">Jake</option>
+              <option value="4">Jamie</option>
+            </select>
           </div>
 
+          <!-- public house -->
           <div class="col-sm-4">
-            <div class="dropdown">
-              <button class="btn btn-lg btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Public House
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
+            <select class="custom-select custom-select-lg bg-dark text-light mb-3">
+              <option selected disabled>-- Public House --</option>
+              <option value="1">Generous Squires</option>
+              <option value="2">Pica Bar</option>
+              <option value="3">The Royal Hotel</option>
+            </select>
           </div>
 
         </div>
@@ -101,7 +92,7 @@
     </section>
 
     <!-- beer scoring section -->
-    <div id="log-middle" class="px-2 py-5">
+    <div id="log-middle" class="px-2 py-2">
 
       <!-- Pre-Swan Thirst -->
       <div id="thirst-container" class="border border-dark rounded mb-1">
@@ -498,7 +489,7 @@
 
     </div>
 
-    <section id="log-bottom">
+    <section id="log-bottom" class="pb-2">
       <!-- form buttons -->
       <div class="container-fluid">
         <div class="row">
