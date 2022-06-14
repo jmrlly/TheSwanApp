@@ -5,20 +5,56 @@ body{
   padding-top: 7rem;
 }
 
-h5 {
+h1 {
   font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+input[type=radio] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+label{
+  font-size: 2rem;
+}
+
+textarea{
+  height: 100%;
+  width: 100%;
 }
 
 
 /************************CLASS SELECTORS************************/
 /* use the class name, prefixed with . */
+
+.bg-gold {
+  background-color: #b58d2d;
+}
+
+.bg-red {
+  background-color: #f13728;
+}
+
+.btn {
+  width: 100%;
+}
+
+.lbl-header{
+  font-size: 2rem;
+}
+
 .nav-img {
   height: 5rem;
 }
 
+.hover-red:hover{
+  background-color: #f13728;
+}
+
+
+
 
 /************************ID SELECTORS************************/
 /* use the id name, prefixed with # */
-#log-top {
-
-}
