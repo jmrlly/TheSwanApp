@@ -2,7 +2,7 @@
 /* use the tag, no prefixes required */
 body{
   font-family: 'Titillium Web', sans-serif;
-  padding-top: 6rem;
+  padding-top: 9rem;
 }
 
 h1 {
@@ -51,7 +51,7 @@ textarea{
 }
 
 .nav-img {
-  height: 5rem;
+  height: 8rem;
 }
 
 .hover-red:hover{
