@@ -49,6 +49,10 @@ textarea {
   height: 2rem;
 }
 
+.custom-select:hover {
+  background-color: #fff;
+}
+
 .hover-red:hover {
   background-color: #f13728;
 }
