@@ -1,6 +1,6 @@
 /************************TAG SELECTORS************************/
 /* use the tag, no prefixes required */
-body{
+body {
   font-family: 'Titillium Web', sans-serif;
   padding-top: 9rem;
 }
@@ -8,19 +8,19 @@ body{
 h1 {
   font-weight: bold;
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
 }
 
-input[type=radio] {
+input [type=radio] {
     width: 1.5rem;
     height: 1.5rem;
 }
 
-label{
+label {
   font-size: 2rem;
 }
 
-textarea{
+textarea {
   height: 100%;
   width: 100%;
 }
@@ -41,22 +41,33 @@ textarea{
   width: 100%;
 }
 
-.index-img{
+.bullet-icon {
+  height: 2rem;
+}
+
+.hover-red:hover {
+  background-color: #f13728;
+}
+
+.index-img {
   max-width: 100%;
   height: auto;
 }
 
-.lbl-header{
-  font-size: 2rem;
+.lbl-header {
+  font-size: 1.5rem;
+  color: #cfcfcf;
 }
 
 .nav-img {
   height: 8rem;
 }
 
-.hover-red:hover{
-  background-color: #f13728;
+.nav-item {
+  padding: 0 18px;
 }
+
+
 
 
 
