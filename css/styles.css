@@ -67,10 +67,11 @@ textarea {
   padding: 0 18px;
 }
 
-
-
-
-
+@media (max-width: 700px) {
+   .hide-me {
+      display: none;
+   }
+}
 
 /************************ID SELECTORS************************/
 /* use the id name, prefixed with # */
