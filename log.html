@@ -58,7 +58,7 @@
   </section>
 
   <!-- form section -->
-  <form action="" method="post" enctype="text/plain">
+  <form action="mailto:holyswanquest@gmail.com?subject=LogSwan" method="post" enctype="text/plain">
 
     <!-- dropdown boxes -->
     <section id="log-dropdowns">
@@ -74,6 +74,7 @@
               <option value="2">Jack</option>
               <option value="3">Jake</option>
               <option value="4">Jamie</option>
+              <option value="5">New (add name to comments)</option>
             </select>
           </div>
 
@@ -85,6 +86,7 @@
               <option value="2">Jack</option>
               <option value="3">Jake</option>
               <option value="4">Jamie</option>
+              <option value="5">New (add name to comments)</option>
             </select>
           </div>
 
@@ -95,6 +97,7 @@
               <option value="1">Generous Squires</option>
               <option value="2">Pica Bar</option>
               <option value="3">The Royal Hotel</option>
+              <option value="5">New (add venue to comments)</option>
             </select>
           </div>
 
@@ -502,7 +505,7 @@
       <div class="container-fluid p-3">
         <div class="row">
           <div class="col pt-2">
-            <textarea name="comments"></textarea>
+            <textarea name="comments" required></textarea>
           </div>
         </div>
       </div>
@@ -516,11 +519,11 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4">
-            <input type="button" class="btn btn-lg btn-dark" name="goHome" value="Cancel">
+            <input type="button" class="btn btn-lg btn-dark" name="goHome" value="Cancel" disabled>
           </div>
 
           <div class="col-sm-4">
-            <input type="button" class="btn btn-lg btn-dark" name="clearForm" value="Clear">
+            <input type="button" class="btn btn-lg btn-dark" name="clearForm" value="Clear" disabled>
           </div>
 
           <div class="col-sm-4">
